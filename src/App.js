@@ -17,6 +17,12 @@ export default class App extends Component {
     })
   }
 
+  clear = () => {
+    this.setState({
+      number: 0
+    })
+  }
+
   render() {
     const { number } = this.state
     return (
@@ -33,7 +39,9 @@ export default class App extends Component {
                 </Card.Header>
                 <Card.Body className="p-0">
                   <ButtonGroup size="lg" className="w-100">
-                    <Button className="btn-number btn-dark w-25 py-4">AC</Button>
+                    <Button 
+                      className="btn-number btn-dark w-25 py-4"
+                      onClick={this.clear}>AC</Button>
                     <Button className="btn-number btn-dark w-25 py-4">+/-</Button>
                     <Button className="btn-number btn-dark w-25 py-4">%</Button>
                     <Button className="btn-number btn-warning w-25 py-4">/</Button>
@@ -78,7 +86,9 @@ export default class App extends Component {
                     <Button
                       className="btn-number btn-secondary w-50 py-4"
                       onClick={() => this.handleNumber(0)}>0</Button>
-                    <Button className="btn-number btn-secondary w-25 py-4">.</Button>
+                    <Button 
+                      className="btn-number btn-secondary w-25 py-4"
+                      onClick={() => this.handleNumber('.')}>.</Button>
                     <Button className="btn-number btn-warning w-25 py-4">=</Button>
                   </ButtonGroup>
                 </Card.Body>
