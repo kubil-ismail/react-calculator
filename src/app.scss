@@ -1,0 +1,40 @@
+/* Variabel*/
+$warning: #fa8a00;
+$dark: #3f4042;
+$secondary: #5f6062; 
+
+.circle {
+  padding-bottom: 11px !important;
+}
+
+.head-number {
+  text-align: right;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+.btn-group {
+  margin-bottom: -0.5px !important;
+}
+
+.btn-number {
+  font-size: 25px !important;
+  font-weight: 700;
+  border: 1px solid #2c2c2e !important;
+  border-radius: 0px !important;
+}
+
+.btn-warning {
+  color: white !important;
+}
+
+
+// Set Theme Bootstrap
+$theme-colors: (
+    "warning": $warning,
+    "dark": $dark,
+    "secondary": $secondary,
+);
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";

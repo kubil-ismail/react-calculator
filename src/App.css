@@ -1,0 +1,5 @@
+
+.btn-secondary:focus,
+.btn-secondary:hover {
+  border: 1px solid #2c2c2e;
+}
